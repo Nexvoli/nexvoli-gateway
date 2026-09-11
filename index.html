@@ -5,9 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NEXVOLI - Find High-Paying Remote & Flexible Jobs</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
+    <meta name="description" content="Find jobs that fit your life. Remote, part-time and full-time positions. No experience needed." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NEXVOLI - Find High-Paying Remote & Flexible Jobs" />
+    <meta property="og:description" content="Find jobs that fit your life. Remote, part-time and full-time positions. No experience needed." />
+    <meta property="og:image" content="https://images.pexels.com/photos/7693734/pexels-photo-7693734.jpeg" />
   </head>
   <body>
 
@@ -58,38 +60,39 @@
 
         <!-- PHASE 2: EXCLUSIVE JOB TICKET SUCCESS POPUP -->
         <div id="phase-success" style="display:none; width:100%; height:100%; justify-content:center; align-items:center; z-index:100; background:rgba(2,6,23,0.88); backdrop-filter:blur(15px); position:absolute; top:0; left:0;">
-            <div style="background:#ffffff; border-radius:24px; padding:45px 40px 35px 40px; max-width:90%; width:520px; text-align:center; position:relative; overflow:hidden; box-shadow:0 40px 80px rgba(0,0,0,0.8); animation:popUpTicket 0.5s ease-out forwards;">
+            <!-- পপআপের স্টাইলে max-height এবং overflow-y-auto যুক্ত করা হয়েছে -->
+            <div style="background:#ffffff; border-radius:24px; padding:35px 25px 25px 25px; max-width:92%; width:520px; text-align:center; position:relative; max-height:85vh; overflow-y:auto; overflow-x:hidden; box-shadow:0 40px 80px rgba(0,0,0,0.8); animation:popUpTicket 0.5s ease-out forwards;">
                 <div style="position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg, #0ea5e9, #10b981, #3b82f6);"></div>
                 
                 <div style="width:60px; height:60px; background:#10b981; border-radius:50%; display:flex; justify-content:center; align-items:center; margin:0 auto 15px auto; box-shadow:0 8px 20px rgba(16,185,129,0.4);">
                     <svg width="30" height="30" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
                 </div>
                 
-                <h2 style="color:#0f172a; font-size:1.8rem; font-weight:900; margin-bottom:8px;">Employment Match Confirmed</h2>
-                <div style="color:#fbbf24; font-size:1.2rem; margin-bottom:15px;">★★★★★ <span style="color:#475569; font-size:0.9rem; font-weight:600; margin-left:8px;">Verified Employer</span></div>
-                <p style="color:#475569; font-size:1.05rem; line-height:1.5; margin-bottom:25px;">We have exclusively reserved a high-paying position for you in your state.</p>
+                <h2 style="color:#0f172a; font-size:1.6rem; font-weight:900; margin-bottom:8px;">Employment Match Confirmed</h2>
+                <div style="color:#fbbf24; font-size:1.1rem; margin-bottom:15px;">★★★★★ <span style="color:#475569; font-size:0.85rem; font-weight:600; margin-left:8px;">Verified Employer</span></div>
+                <p style="color:#475569; font-size:0.95rem; line-height:1.5; margin-bottom:20px;">We have exclusively reserved a high-paying position for you in your state.</p>
                 
-                <div style="background:#f8fafc; border:2px solid #e2e8f0; border-radius:16px; padding:20px; margin-bottom:30px; position:relative;">
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                        <span style="font-size:0.85rem; color:#64748b; font-weight:700; font-family:monospace;">MATCH ID: <span id="random-id">#US-8842</span></span>
-                        <span style="background:#d1fae5; color:#059669; padding:4px 10px; border-radius:20px; font-size:0.85rem; font-weight:700;">⚡ Hiring Now</span>
+                <div style="background:#f8fafc; border:2px solid #e2e8f0; border-radius:16px; padding:18px; margin-bottom:25px; position:relative;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                        <span style="font-size:0.75rem; color:#64748b; font-weight:700; font-family:monospace;">MATCH ID: <span id="random-id">#US-8842</span></span>
+                        <span style="background:#d1fae5; color:#059669; padding:4px 10px; border-radius:20px; font-size:0.75rem; font-weight:700;">⚡ Hiring Now</span>
                     </div>
-                    <h3 id="match-job-title" style="color:#0284c7; font-size:1.45rem; font-weight:900; margin:0;">Loading...</h3>
-                    <div style="border-top:2px dashed #cbd5e1; margin:20px 0;"></div>
-                    <div style="display:flex; justify-content:space-between; padding:0 10px;">
+                    <h3 id="match-job-title" style="color:#0284c7; font-size:1.35rem; font-weight:900; margin:0;">Loading...</h3>
+                    <div style="border-top:2px dashed #cbd5e1; margin:15px 0;"></div>
+                    <div style="display:flex; justify-content:space-between; padding:0 5px;">
                         <div style="text-align:left;">
-                            <span style="font-size:0.8rem; color:#64748b; font-weight:700; text-transform:uppercase; display:block;">Location</span>
-                            <span id="match-work-mode" style="font-size:1.05rem; color:#0f172a; font-weight:800;">Remote</span>
+                            <span style="font-size:0.75rem; color:#64748b; font-weight:700; text-transform:uppercase; display:block;">Location</span>
+                            <span id="match-work-mode" style="font-size:0.95rem; color:#0f172a; font-weight:800;">Remote</span>
                         </div>
                         <div style="text-align:right;">
-                            <span style="font-size:0.8rem; color:#64748b; font-weight:700; text-transform:uppercase; display:block;">Position</span>
-                            <span id="match-job-type" style="font-size:1.05rem; color:#0f172a; font-weight:800;">Full-Time</span>
+                            <span style="font-size:0.75rem; color:#64748b; font-weight:700; text-transform:uppercase; display:block;">Position</span>
+                            <span id="match-job-type" style="font-size:0.95rem; color:#0f172a; font-weight:800;">Full-Time</span>
                         </div>
                     </div>
                 </div>
                 
                 <!-- YOUR CPA LINK GOES HERE -->
-                <a href="https://go2daff.click/click?o=4370&p=20648" target="_blank" onclick="closeGateway()" style="background:linear-gradient(135deg, #2563eb, #1e40af); color:white; padding:18px 20px; border-radius:12px; text-decoration:none; font-size:1.2rem; font-weight:800; display:flex; justify-content:center; align-items:center; box-shadow:0 10px 25px rgba(37,99,235,0.4);">
+                <a href="https://go2daff.click/click?o=4370&p=20648" target="_blank" onclick="closeGateway()" style="background:linear-gradient(135deg, #2563eb, #1e40af); color:white; padding:15px 18px; border-radius:12px; text-decoration:none; font-size:1.1rem; font-weight:800; display:flex; justify-content:center; align-items:center; box-shadow:0 10px 25px rgba(37,99,235,0.4);">
                     Review Offer & Apply Now
                 </a>
                 

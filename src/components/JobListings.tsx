@@ -35,10 +35,10 @@ export default function JobListings({ searchFilters }: JobListingsProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 text-2xl sm:text-3xl font-extrabold text-brand-900">
-            <Flame className="w-7 h-7 text-alert-600" />
-            Trending Opportunities Hiring Today
-          </div>
+          <div className="inline-flex flex-col items-center justify-center text-center gap-2 text-2xl sm:text-3xl font-extrabold text-brand-900">
+          <Flame className="w-8 h-8 text-alert-600 mb-1" />
+          <span>Trending Opportunities Hiring Today</span>
+        </div>
           <p className="text-brand-500 mt-3 max-w-xl mx-auto">
             Hand-picked roles from verified employers actively hiring this week.
             Apply before positions fill up.
