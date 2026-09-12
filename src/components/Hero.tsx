@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 const HERO_IMAGE =
-  'https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg?auto=compress&cs=tinysrgb&w=1920';
+  'https://images.pexels.com/photos/7691697/pexels-photo-7691697.jpeg?auto=compress&cs=tinysrgb&w=1920';
 
 export default function Hero({ onSearch }: HeroProps) {
   const [keyword, setKeyword] = useState('');
@@ -21,12 +21,12 @@ export default function Hero({ onSearch }: HeroProps) {
     <section className="relative hero-gradient overflow-hidden">
       {/* Background image overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center scale-105 opacity-30"
+        className="absolute inset-0 bg-cover bg-center scale-105 opacity-40"
         style={{ backgroundImage: `url(${HERO_IMAGE})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-brand-900/70 via-brand-900/60 to-brand-900/80" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-40 sm:pt-40 sm:pb-40">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 sm:pt-24 sm:pb-32">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
